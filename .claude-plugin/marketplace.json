@@ -1,0 +1,15 @@
+{
+  "name": "cutskills",
+  "description": "Video-editing skills for AI coding agents from cutskills.com",
+  "owner": {
+    "name": "CutSkills",
+    "url": "https://cutskills.com"
+  },
+  "plugins": [
+    {
+      "name": "kinetic-hook",
+      "source": "./",
+      "description": "One sentence in, a 4-6 second vertical kinetic-typography hook clip out."
+    }
+  ]
+}

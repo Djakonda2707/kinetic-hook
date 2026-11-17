@@ -1,0 +1,9 @@
+# One hook per line: sentence  ||  key words (1-2)
+# Build one with:  node scripts/build.mjs "<sentence>" --emphasis "<key words>"
+
+Nobody reads the first slide.                     || Nobody
+You are editing this the slow way.                || slow
+Three tools I use every single day.               || Three
+This one setting doubled my watch time.           || doubled
+Your AI agent can edit video now.                 || video, now
+Most people skip this step. Do not.               || skip

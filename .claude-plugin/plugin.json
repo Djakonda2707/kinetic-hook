@@ -1,0 +1,14 @@
+{
+  "name": "kinetic-hook",
+  "displayName": "Kinetic Hook",
+  "version": "1.0.0",
+  "description": "One sentence in, a 4-6 second vertical 1080x1920 kinetic-typography hook clip out. Renders locally with HyperFrames.",
+  "author": {
+    "name": "CutSkills",
+    "url": "https://cutskills.com"
+  },
+  "homepage": "https://cutskills.com",
+  "repository": "https://github.com/Djakonda2707/kinetic-hook",
+  "license": "MIT",
+  "keywords": ["video", "kinetic-typography", "hook", "reels", "tiktok", "shorts", "hyperframes", "motion-graphics"]
+}

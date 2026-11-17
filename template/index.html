@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>{{TITLE}}</title>
+    <style>
+      @font-face { font-family: "Inter Tight"; src: url("assets/fonts/inter-tight-800.woff2") format("woff2"); font-weight: 800; font-style: normal; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/jetbrains-mono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+
+      html, body { margin: 0; padding: 0; background: {{BG}}; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: {{BG}}; }
+      .layer { position: absolute; inset: 0; }
+      #cam { z-index: 10; }
+      #grain { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 50; pointer-events: none; }
+      #hud { z-index: 60; }
+
+      /* A word: outer mask + inner glyphs. Padding gives descenders and overhangs room inside the mask. */
+      .w { display: inline-block; position: relative; overflow: hidden; vertical-align: top;
+           padding: 0.06em 0.07em 0.14em; margin: -0.06em -0.07em -0.14em; }
+      .wi { display: inline-block; position: relative; z-index: 1; }
+      .blk { position: absolute; z-index: 0; transform-origin: 0% 50%; }
+      .line { display: block; width: max-content; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="hook" data-start="0" data-width="1080" data-height="1920" data-duration="{{DURATION}}">
+      <div id="cam" class="layer" data-layout-allow-safe-zone></div>
+      <canvas id="grain" width="540" height="960"></canvas>
+      <div id="hud" class="layer" data-layout-allow-safe-zone></div>
+    </div>
+    <script src="assets/gsap.min.js"></script>
+    <script>
+      window.HOOK = {{HOOK}};
+    </script>
+    <script src="engine.js"></script>
+  </body>
+</html>
